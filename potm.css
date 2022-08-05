@@ -1,0 +1,10 @@
+body{
+    text-align:center;
+    padding:150px;
+    background-color:lightskyblue;
+    font-size: 30px;
+    border: 12px ridge yellow;
+}
+img{
+    width:700px;
+}

@@ -1,0 +1,50 @@
+<html>
+    <head>
+      <link href="buytickets.css" rel="stylesheet">
+      <script>
+function buy(){
+  var fname = document.forms["myform"]["fname"].value; //alert(fname);
+  var lname = document.forms["myform"]["lname"].value; //alert(lname);
+  var gmail = document.forms["myform"]["gmail"].value; //alert(gmail);
+  var phone = document.forms["myform"]["phone"].value; //alert(phone);
+  var seat = document.forms["myform"]["seat"].value; //alert(seat);
+
+  if(fname==""){
+    alert("First Name cant be empty");
+  }else if(lname==""){
+    alert("Last Name cant be empty");
+  }else if(gmail==""){
+    alert("EMAIL cant be empty");
+  }else if(phone==""){
+    alert("Phone number cant be empty");
+  }else if(seat==""){
+    alert("Seat cant be empty");
+  } else{
+    alert("Tickets purcahsed");
+  }
+}
+      </script>
+    </head>
+      <body>
+        <h3>Fill in the form to finalize purchase.</h3>
+        <form name="myform" onsubmit="buy()">
+        <label for="fname">Enter First name</label>
+        <input type="text" id="fn" name="fname">
+        <br> <br>
+        <label for="lname">Enter last name</label>
+        <input type="text" id="ln" name="lname">
+        <br><br>
+        <label for="gmail">Enter Gmail/email</label>
+        <input type="email" id="gm" name="gmail">
+        <br><br>
+        <label for="phone">Enter phone number</label>
+        <input type="number" id="ph" name="phone">
+        <br><br>
+        <label for="seat">Select seat</label>
+        <input type="text" id="ss" name="seat">
+        <br><br>
+        <button>Sumbmit purchase</button>
+        </form>
+        <a href="Home.html">Home</a>
+      </body>
+</html>
